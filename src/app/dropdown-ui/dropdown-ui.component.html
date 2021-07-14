@@ -1,0 +1,175 @@
+<div class="container-fluid">
+  <div class="dropdownWrapper">
+    <div class="dropdownList1">
+      <div class="dropdown1">
+        <label class="droplabel">Line of business</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>IVC</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Select Location</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Referral Status</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Pending</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Referring Doctor</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Order From Date</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>05/01/2021</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Order to Date</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>05/01/2021</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Insurance</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Referral Steps</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown1">
+        <label class="droplabel">Priority</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="icon1">
+        <div class="searchIcon">
+          <a><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+
+      <div class="icon1">
+        <a><i class="fa fa-eraser"></i></a>
+      </div>
+
+      <div class="icon1">
+        <a><i class="fas fa-redo-alt"></i></a>
+      </div>
+
+      <div class="icon1">
+        <a (click)="displayRestFilter()">
+          <i class="fas fa-sliders-h"></i>
+        </a>
+      </div>
+
+      <div class="icon1">
+        <a><i class="fas fa-save"></i></a>
+      </div>
+    </div>
+
+    <!-- 2nd Part -->
+    <div class="dropdownlist2" *ngIf="showHide">
+      <div class="dropdown2">
+        <label class="droplabel">Insurance Type</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Primary..</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Therapy</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Primary Med</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Intake By</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Referral Age</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Acuity</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Cancellation Reason</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Pratice/Account</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Patient Type</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>New, Existing</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Provider Type</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>New , Existing</option>
+        </select>
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Patient Name</label>
+        <input type="text" name="PatientName" class="form-control" />
+      </div>
+
+      <div class="dropdown2">
+        <label class="droplabel">Referral</label>
+        <input type="text" name="referral" class="form-control" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+.dropdownWrapper {
+  border: 1px solid #cecdcd;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+
+  .dropdownList1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+    gap: 10px;
+
+    .dropdown1 {
+      display: flex;
+      flex-direction: column;
+      width: 10%;
+
+      select.form-select {
+        font-size: 13px !important;
+      }
+
+      .droplabel {
+        color: #aaaab8;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+
+    .icon1 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .searchIcon {
+        background: #3281cb;
+        color: #fff;
+        border-radius: px;
+
+        .fa-search {
+          padding: 5px 9px 5px 9px;
+          font-size: 20px;
+        }
+      }
+
+      .fa-eraser {
+        font-size: 28px;
+        color: #0458d0;
+      }
+
+      .fa-redo-alt {
+        font-size: 25px;
+        color: #0458d0;
+      }
+
+      .fa-sliders-h {
+        font-size: 25px;
+        color: #3281cb;
+      }
+
+      .fa-save {
+        font-size: 25px;
+        color: #3281cb;
+      }
+    }
+  }
+
+  .dropdownlist2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+    gap: 10px;
+
+    .dropdown2 {
+      display: flex;
+      flex-direction: column;
+      width: 10%;
+
+      select.form-select {
+        font-size: 13px !important;
+      }
+
+      input.form-control {
+        font-size: 13px !important;
+      }
+
+      .droplabel {
+        color: #aaaab8;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+}
