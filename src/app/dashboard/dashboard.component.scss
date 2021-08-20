@@ -1,0 +1,126 @@
+.wrapperContainer {
+  padding: 30px;
+}
+
+.wrapperDataOne .fa-rotate-45 {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.wrapperOne .wrapperDataOne {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  max-width: 176px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px #d8d8d8;
+}
+
+.wrapperOne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperOne .wrapperDataOne h2 {
+  color: #444444;
+  font-size: 32px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.wrapperOne .wrapperDataOne i {
+  color: #0c59cf;
+  font-size: 22px;
+}
+
+.wrapperDataOne span {
+  color: #0c59cf;
+  font-size: 13px;
+}
+
+.wrapperTwo {
+  box-shadow: 0 3px 10px #d8d8d8;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: #f9f3ee;
+  margin-top: 20px;
+  position: relative;
+}
+
+.wrapperTwo .title-refferal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -8px;
+  text-align: center;
+}
+
+.wrapperTwo .title-refferal span {
+  background-color: #fff;
+  color: #ce6528;
+  font-size: 16px;
+}
+
+.wrapperTwo {
+  box-shadow: 0 3px 10px #d8d8d8;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: #f9f3ee;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapperTwo .wrapperDataTwo {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  max-width: 132px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px #d8d8d8;
+}
+
+.wrapperTwo .wrapperDataTwo span {
+  font-size: 10px;
+  color: #ce6528;
+}
+
+.wrapperTwo .wrapperDataTwo h4 {
+  color: #444444;
+  font-size: 25px;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .wrapperOne .wrapperDataOne {
+    max-width: 9.167vw;
+    padding: 0.781vw;
+  }
+  .wrapperTwo .wrapperDataTwo {
+    max-width: 6.875vw;
+    padding: 0.781vw;
+  }
+  .wrapperOne .wrapperDataOne h2 {
+    font-size: 1.875vw;
+    margin: 0.781vw 0;
+  }
+  .wrapperDataOne span {
+    font-size: 0.9vw;
+  }
+  .wrapperTwo .wrapperDataTwo h4 {
+    font-size: 1.563vw;
+    margin: 0.781vw 0;
+  }
+}

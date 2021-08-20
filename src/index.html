@@ -24,5 +24,42 @@
   </head>
   <body class="mat-typography">
     <app-root></app-root>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
+    <script>
+      $(".carousel").carousel({
+        pause: true,
+        interval: false,
+      });
+    </script>
+
+    <!-- <script>
+      $(".carousel").swipe({
+        swipe: function (direction) {
+          if (direction == "left") $(this).carousel("next");
+          if (direction == "right") $(this).carousel("prev");
+        },
+      });
+    </script> -->
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(document).click(function (event) {
+          var click = jQuery(event.target);
+          var _open = jQuery(".navbar-collapse").hasClass("show");
+          if (_open === true && !click.hasClass("navbar-toggler")) {
+            jQuery(".navbar-toggler").click();
+          }
+        });
+      });
+    </script>
   </body>
 </html>

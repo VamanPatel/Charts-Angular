@@ -1,0 +1,166 @@
+.backbutton {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-right: 20px;
+}
+
+.backbutton .fa-chevron-left {
+  color: #037aff;
+  font-size: 17px;
+}
+.backbutton .back {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.backbutton .back:hover {
+  text-decoration: none;
+}
+
+.mainWrapper {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.info-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.info-box .main-title {
+  position: absolute;
+  font-size: 14px !important;
+  text-transform: capitalize;
+  top: -15px;
+  margin: 0;
+  background-color: #fff;
+  font-weight: bold;
+  left: 20px;
+}
+
+.info-box .ReferralInfoData {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ReferralInfoData .Referral {
+  display: flex;
+  flex: 0 0 25%;
+  max-width: 25%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ReferralInfoData .Referral h5 {
+  color: #aaaab2;
+  margin: 0;
+}
+
+.patient.Referral:first-child {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.patient.Referral i {
+  margin-right: 10px;
+  color: #0c59cf;
+  position: absolute;
+  left: -9px;
+  top: 21px;
+  font-size: 18px;
+}
+
+.providerInfoData.ReferralInfoData .Referral {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.patientInfoData.ReferralInfoData .Referral {
+  flex: 0 0 22%;
+  max-width: 20%;
+  position: relative;
+  padding-left: 2%;
+}
+
+.Referral.priority {
+  position: relative;
+}
+
+.Referral.priority::before {
+  content: "";
+  width: 8px;
+  height: 44px;
+  background-color: #54278f;
+  position: absolute;
+  left: -15px;
+}
+
+.ReferralInfoData .Referral:first-child span {
+  font-weight: 600;
+}
+
+/*--- Table ---*/
+
+.info-box table {
+  display: inline-table;
+  width: 100%;
+}
+
+.info-box table th {
+  font-size: 12px;
+  color: #aaaab2;
+  text-align: left;
+  font-weight: 400;
+}
+
+.info-box table i.green {
+  color: #629c44;
+}
+.info-box table i {
+  margin-right: 10px;
+}
+
+.info-box table i.orange {
+  color: #ffa834;
+}
+
+.info-box table i.gray {
+  color: #7a7a7a;
+}
+
+.info-box table i.background-gray {
+  background-color: #7a7a7a;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.documentInfo table i {
+  color: #3d8af7;
+}
+
+.info-box tbody tr td {
+  border-bottom: 1px solid #eaeaea;
+  padding: 5px 0;
+}
+
+.info-box tbody tr:last-child td {
+  border: none;
+}
+
+.documentInfo tr td:last-child,
+.documentInfo tr th:last-child {
+  text-align: center;
+}

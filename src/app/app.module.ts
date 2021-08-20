@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { MeterComponent } from './meter/meter.component';
 import { BarChartAComponent } from './bar-chart-a/bar-chart-a.component';
 import { BarChartBComponent } from './bar-chart-b/bar-chart-b.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ChartsModule } from 'ng2-charts';
 import { Ng2GaugeModule } from 'ng2-gauge';
@@ -61,6 +64,15 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { DropdownComComponent } from './dropdown-com/dropdown-com.component';
 import { DropdownUiComponent } from './dropdown-ui/dropdown-ui.component';
 import { DetailScreenComponent } from './detail-screen/detail-screen.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatDialogComponent } from './mat-dialog/mat-dialog.component';
+import { ScroollComponent } from './scrooll/scrooll.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { Ng2ChartComponent } from './ng2-chart/ng2-chart.component';
+import { SwipeComponent } from './swipe/swipe.component';
+import { EditorComponent } from './editor/editor.component';
+import { QuillModule } from 'ngx-quill';
+import { FormsModule } from '@angular/forms';
 
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme, Widgets);
 
@@ -78,12 +90,21 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme, Widgets);
     DropdownComComponent,
     DropdownUiComponent,
     DetailScreenComponent,
+    DashboardComponent,
+    MatDialogComponent,
+    ScroollComponent,
+    Ng2ChartComponent,
+    SwipeComponent,
+    EditorComponent,
   ],
   imports: [
     BrowserModule,
+    ScrollingModule,
     AppRoutingModule,
+    InfiniteScrollModule,
     ChartsModule,
     Ng2GaugeModule,
+    NgbModule,
     FusionChartsModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
@@ -118,8 +139,11 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme, Widgets);
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    QuillModule.forRoot(),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+platformBrowserDynamic().bootstrapModule(AppModule);

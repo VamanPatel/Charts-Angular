@@ -9,42 +9,47 @@ import { Chart } from 'chart.js';
 export class GaugeComponent implements OnInit {
   canvas: any;
   ctx: any;
+  chartData: any;
   @ViewChild('mychart') mychart: any;
 
   ngAfterViewInit() {
     this.canvas = this.mychart.nativeElement;
     this.ctx = this.canvas.getContext('2d');
 
-    new Chart(this.ctx, {
-      type: 'doughnut',
-
-      options: {
-        rotation: -Math.PI,
-        cutoutPercentage: 30,
-        circumference: Math.PI,
-        legend: {
-          position: 'left',
-        },
-        animation: {
-          animateRotate: false,
-          animateScale: true,
-        },
-      },
-
+    this.chartData = {
+      type: 'gauge',
       data: {
-        labels: [],
         datasets: [
           {
-            data: [35, 35, 35],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.2)',
-              'rgba(255, 206, 86, 0.2)',
-              'rgba(63, 191, 63, 0.2)',
-            ],
+            data: [1, 2, 3, 4],
+            backgroundColor: ['green', 'yellow', 'orange', 'red'],
           },
         ],
       },
-    });
+      options: {
+        needle: {
+          radiusPercentage: 2,
+          widthPercentage: 3.2,
+          lengthPercentage: 80,
+          color: 'rgba(0, 0, 0, 1)',
+        },
+        valueLabel: {
+          display: true,
+          formatter: (value) => {
+            return '$' + Math.round(value);
+          },
+          color: 'rgba(255, 255, 255, 1)',
+          backgroundColor: 'rgba(0, 0, 0, 1)',
+          borderRadius: 5,
+          padding: {
+            top: 10,
+            bottom: 10,
+          },
+        },
+      },
+    };
+
+    new Chart(this.ctx, this.chartData);
   }
 
   constructor() {}

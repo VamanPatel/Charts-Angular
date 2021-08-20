@@ -1,0 +1,73 @@
+<!-- <div
+  class="search-results"
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="onScroll()"
+  [scrollWindow]="false"
+>
+  <div *ngFor="let num of number" class="number">
+    {{ num }}
+  </div>
+</div> -->
+<header class="navigation-wrap main-header">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Paragon</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div
+  class="modal fade"
+  id="exampleModalToggle"
+  aria-hidden="true"
+  aria-labelledby="exampleModalToggleLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <img
+          src="../../assets/navi-photography-QV_zpqCWneI-unsplash.jpg"
+          width="100%"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<a
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  href="#exampleModalToggle"
+  role="button"
+  >Open first modal</a
+>

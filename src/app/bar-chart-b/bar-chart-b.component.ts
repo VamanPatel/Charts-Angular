@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
-import * as pluginDataLabels from 'chartjs-plugin-datalabels';
 
 import { Label } from 'ng2-charts';
 
@@ -16,7 +15,8 @@ export class BarChartBComponent implements OnInit {
       position: 'bottom',
       labels: {
         fontSize: 15,
-        padding: 20,
+        padding: 15,
+        boxWidth: 5,
       },
     },
     scales: {

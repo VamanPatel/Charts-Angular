@@ -1,0 +1,22 @@
+<div class="text-danger text-center my-4">
+  <h1>Simple Editor</h1>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="editor">
+      <quill-editor
+        [styles]="{ height: '500px' }"
+        [(ngModel)]="content"
+      ></quill-editor>
+      <div class="d-flex justify-content-end py-3">
+        <button class="btn btn-danger text-right px-4" (click)="addhtml()">
+          Add
+        </button>
+      </div>
+      <p>{{ content }}</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div [innerHTML]="htmlString" class="output"></div>
+  </div>
+</div>
